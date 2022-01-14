@@ -1,6 +1,5 @@
-import "./App.css";
-import React from "react";
-import { Segment } from "./components/Segment";
+import './App.css';
+import { Segment } from "./components/Segment"
 
 const tasks = [
   {
@@ -17,9 +16,13 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>NoteBoard </h1>
+        <h1>NoteBoard hELLO</h1>
       </header>
-      <Segment taskInfoList={tasks} />
+      <div className="Container">
+        <Segment taskInfoList={tasks} />
+        <Segment taskInfoList={tasks} />
+        <Segment taskInfoList={tasks} />
+      </div>
     </div>
   );
 }
