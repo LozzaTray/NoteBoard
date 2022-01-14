@@ -3,11 +3,11 @@ import { Segment } from "./components/Segment"
 
 const tasks = [
   {
-    text: "This is a task",
+    text: "Walk the plants",
     dueDate: "Monday",
   },
   {
-    text: "This is a task",
+    text: "Water the dog",
     dueDate: "Next Wednesday",
   },
 ];
@@ -16,12 +16,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>NoteBoard hELLO</h1>
+        <h1>NoteBoard</h1>
       </header>
       <div className="Container">
-        <Segment taskInfoList={tasks} />
-        <Segment taskInfoList={tasks} />
-        <Segment taskInfoList={tasks} />
+        <Segment heading="To Do" taskInfoList={tasks} />
+        <Segment heading="In Progress" taskInfoList={tasks} />
+        <Segment heading="Done" taskInfoList={tasks} />
       </div>
     </div>
   );
