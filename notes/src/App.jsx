@@ -1,6 +1,6 @@
 import "./App.css";
 import React from "react";
-import { Segment } from "./components/segment";
+import { Segment } from "./components/Segment";
 
 const tasks = [
   {
